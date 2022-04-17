@@ -24,7 +24,7 @@ function Section({
             {rightBtnText && <RightButton>{rightBtnText}</RightButton>}
           </ButtonGroup>
         </Fade>
-        <DownArrow src="/images/down-arrow.svg" />
+        <DownArrow src={process.env.PUBLIC_URL + '/images/down-arrow.svg'} />
       </Buttons>
     </Wrap>
   );
@@ -42,7 +42,7 @@ const Wrap = styled.div`
   flex-direction: column;
   justify-content: space-between; //vertical
   align-items: center; //horizontal
-  background-image: ${(props) => `url("/images/${props.bgImage}")`};
+  background-image: ${(props) => `url("${process.env.PUBLIC_URL}/images/${props.bgImage}")`};
   scroll-snap-align: start;
 `;
 
