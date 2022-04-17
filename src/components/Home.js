@@ -15,7 +15,7 @@ function Home() {
       <Section
         tittle="Model Y"
         description="Order Online for Touchless Delivery"
-        backgroundImg="model-Y.jpg"
+        backgroundImg="model-y.jpg"
         leftBtnText="Custom Order"
         rightBtnText="Existing Inventory"
       />
