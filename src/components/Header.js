@@ -12,7 +12,7 @@ function Header() {
   return (
     <Container>
       <a>
-        <img src="/images/logo.svg" alt="" />
+        <img src={process.env.PUBLIC_URL + '/images/logo.svg'} alt="" />
       </a>
       <Menu>
         {cars &&
@@ -24,7 +24,7 @@ function Header() {
       </Menu>
       <RightMenu>
         <a href="#">Shop</a>
-        <a href="#">Tesla Account</a>
+        <a href="#">Account</a>
         <CustomMenu onClick={() => setBurgerStatus(true)} />
       </RightMenu>
       <BurgerNav show={burgerStatus}>
